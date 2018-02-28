@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>Development Application - Blockchain POC Frontend</title>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between sticky-top" id="nav">
+      <a class="navbar-brand" href="./index.html">Block <i class="fas fa-link"></i> chain</a>
+      <form class="form-inline search-form">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav><!-- #nav -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 d-sm-none d-md-block" id="left-aside">
+          <ul>
+            <li><a class="text-secondary" href="./form.html">Form</a></li>
+            <li><a class="text-secondary" href="./index.html">New application</a></li>
+            <li><a class="text-secondary" href="./view.html">View application</a></li>
+            <li><a class="text-secondary" href="./approve.html">Approve</a></li>
+          </ul>
+        </div>
+        <div class="col-md-10 col-sm-12 float-right" id="right-aside">
+          <div class="content">
+            <h4 class="text-secondary">Upload attachments</h4>
+            <form>
+
+              <div id="attachments">
+                <div class="form-group">
+                  <label for="attachments">Attachment</label>
+                  <div class="input-group mb-3">
+                    <input type="file" class="form-control" placeholder="Attachment" name="attachments[]">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary upload-attachment" type="button">Upload</button>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              
+              <div class="form-group">
+                <button type="button" class="btn btn-outline-secondary" id="add-new-attachments">Add new attachments</button>
+              </div>
+
+              <!-- <button type="submit" class="btn btn-secondary">Submit</button> -->
+            </form>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.min.js"></script>
+    <script src="https://wzrd.in/standalone/buffer"></script>
+    <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js" integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.7/localforage.min.js"></script>
+    <script type="text/javascript">
+      var $$ = jQuery.noConflict();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
